@@ -12,7 +12,6 @@ const DetailScreen = ({navigation, route}) => {
           title="뒤로가기"
           onPress={() => {
             // navigation.navigate('HomeScreen');
-            navigation.push('DetailScreen');
           }}
         />
       </View>
