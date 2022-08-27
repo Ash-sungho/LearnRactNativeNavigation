@@ -9,9 +9,15 @@ const HomeScreen = ({navigation}) => {
   return (
     <View>
       <Button
+        title="Drawer 열기"
+        onPress={() => {
+          navigation.openDrawer();
+        }}
+      />
+      <Button
         title="Detail 열기"
         onPress={() => {
-          navigation.navigate('DetailScreen', {data: 'test'});
+          navigation.navigate('DetailScreen');
         }}
       />
     </View>

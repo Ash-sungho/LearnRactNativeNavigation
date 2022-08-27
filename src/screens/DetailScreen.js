@@ -7,16 +7,14 @@ const DetailScreen = ({navigation, route}) => {
   return (
     <>
       <View>
+        <Text>디테일 스크린입니다.{data}</Text>
         <Button
-          title="HomeScreen 열기"
+          title="뒤로가기"
           onPress={() => {
             // navigation.navigate('HomeScreen');
             navigation.push('DetailScreen');
           }}
         />
-      </View>
-      <View>
-        <Text>디테일 스크린입니다.{data}</Text>
       </View>
     </>
   );
